@@ -70,7 +70,7 @@ public class CsvNormalizer {
 
             // Normalize value and add to list
             String normalizedValue;
-            if (columnName == "TotalDuration") {
+            if (columnName.equals("TotalDuration")) {
                 normalizedValue = calculateTotalDuration(csvRow);
             } else {
                 normalizedValue = valueNormalizer.normalizeValue(columnName, value);
